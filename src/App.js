@@ -1,5 +1,5 @@
 import './App.css';
-import {ProfilePic} from './components/ProfilePic.js'
+import ProfilePic from './components/ProfilePic.js'
 function App() {
   return (
     <div className="App">
