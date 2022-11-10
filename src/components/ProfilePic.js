@@ -1,7 +1,7 @@
-
+import pic from "../imgs/IMG_7238.jpg"
 function ProfilePic() {
   return (
-    <img src="../imgs/IMG_7238.jpg" alt="Andrew Chin"/>
+    <img src="{ pic }" alt=""/>
   );
 }
 
