@@ -1,4 +1,4 @@
-import pic from "../imgs/IMG_7238.jpg";
+import pic from "../imgs/IMG_7238.JPG";
 
 function ProfilePic() {
   return (
