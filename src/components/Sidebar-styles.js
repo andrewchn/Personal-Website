@@ -1,14 +1,35 @@
 import styled from "styled-components";
 
-const SidebarSection = styled.section`
+const SidebarContainer = styled.ul`
   display: flex;
-  flex-wrap: wrap;
-  align-items: left;
-  margin-top: 4.5em;
+  
+  flex-flow: column wrap;
+  
+  justify-content: space-around;
+  
+  padding: 0;
+  margin: 0;
+  list-style: none;
+`;
+
+const SidebarItem = styled.li`
+  background: tomato;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+  position: relative;
 `;
 
 const ProfileImg = styled.img`
-    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    position: aboslute;
     border-radius: 50%;
     border-style: solid;
 `;
@@ -16,5 +37,6 @@ const ProfileImg = styled.img`
 const Header1WithSpacing = styled.h1`
     position: relative;
     text-align: right;
+    padding-right: 5rem;
 `;
-export {SidebarSection, ProfileImg, Header1WithSpacing}
+export {SidebarContainer, SidebarItem, ProfileImg, Header1WithSpacing}

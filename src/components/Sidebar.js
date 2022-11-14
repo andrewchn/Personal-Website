@@ -1,15 +1,28 @@
 import pic from "../imgs/Doraemon_character.png";
-import { Dropdown } from "./Dropdown.js";
-import { SidebarSection, ProfileImg, Header1WithSpacing } from "./Sidebar-styles.js";
+import { SidebarContainer, SidebarItem, ProfileImg, Header1WithSpacing } from "./Sidebar-styles.js";
 
 const Sidebar = () => {
   return (
-    <SidebarSection>
-      <ProfileImg src={pic} alt=""/>
+    <SidebarContainer>
+      <SidebarItem>
+        <ProfileImg src={pic} alt=""/>
+      </SidebarItem>
+      <SidebarItem>
+        Andrew
+      </SidebarItem>
+      <SidebarItem>Chin</SidebarItem>
+      <SidebarItem>Hello</SidebarItem>
+
+      {/* <ProfileImg src={pic} alt=""/>
       <Header1WithSpacing>Andrew</Header1WithSpacing>
       <Header1WithSpacing>Chin</Header1WithSpacing>
-      <Dropdown items={["one", "two"]}></Dropdown>
-    </SidebarSection>
+      <a href="google.com">About</a>
+      <a href="google.com">Projects</a>
+      <a href="google.com">Interests</a>
+      <a href="google.com">Resume</a>
+      <a href="google.com">Contact</a> */}
+      
+    </SidebarContainer>
   );
 };
 
