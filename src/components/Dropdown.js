@@ -22,7 +22,6 @@ const Dropdown = ({items}) => {
           </li>
         </ul>
       ) : null}
-      {open ? <div>Is Open</div> : <div>Is Closed</div>}
     </div>
   );
 };

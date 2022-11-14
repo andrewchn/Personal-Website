@@ -6,7 +6,8 @@ const Sidebar = () => {
   return (
     <SidebarSection>
       <ProfileImg src={pic} alt=""/>
-      <Header1WithSpacing>Andrew Chin</Header1WithSpacing>
+      <Header1WithSpacing>Andrew</Header1WithSpacing>
+      <Header1WithSpacing>Chin</Header1WithSpacing>
       <Dropdown items={["one", "two"]}></Dropdown>
     </SidebarSection>
   );

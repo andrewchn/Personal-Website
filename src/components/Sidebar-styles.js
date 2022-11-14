@@ -15,5 +15,6 @@ const ProfileImg = styled.img`
 
 const Header1WithSpacing = styled.h1`
     position: relative;
+    text-align: right;
 `;
 export {SidebarSection, ProfileImg, Header1WithSpacing}
