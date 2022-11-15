@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import logo from "../imgs/Doraemon_character.png";
+import logo from "../../imgs/Doraemon_character.png";
 import {
   Navbar,
   FlexColumn,
@@ -7,6 +7,7 @@ import {
   NavLinks,
   NavItem,
   NavText,
+  HeaderBox,
   NavLink,
   DesktopNavLinks,
 } from "./Header-Styles";
@@ -17,6 +18,8 @@ const Header = () => {
     About: "#about",
     Skills: "#skills",
     Projects: "#projects",
+    Interests: "#interests",
+    Resume: "#resume",
     Contact: "#contact",
   };
   return (
@@ -28,8 +31,10 @@ const Header = () => {
       </FlexColumn>
       <DesktopNavLinks>
           <FlexColumn>
-            <NavText>Andrew</NavText>
-            <NavText>Chin</NavText>
+            <HeaderBox>
+              <NavText>Andrew</NavText>
+              <NavText>Chin</NavText>
+            </HeaderBox>
             <NavLinks>
               {Object.keys(navLinks).map((key, index) => {
                 return (

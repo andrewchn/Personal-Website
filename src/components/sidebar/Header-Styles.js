@@ -23,9 +23,9 @@ const FlexColumn = styled.div`
 const ProfileImg = styled.img`
     max-width: 90%;
     max-height: 90%;
-    position: aboslute;
     border-radius: 50%;
     border-style: solid;
+    border-color: black;
 `;
 
 const NavLinks = styled.ul`
@@ -36,31 +36,38 @@ const NavLinks = styled.ul`
 `;
 
 const NavItem = styled.li`
-  margin-right: 2em;
   margin-bottom: ${(props) => (props.marginBottom ? "0.7rem" : "")};
   &:last-child {
     margin-right: 0;
   }
 `;
 
+const HeaderBox = styled.div`
+  align-items: flex-start;
+`;
+
 const NavText = styled.h1`
+  text-align: start;
   font-size: 2em;
   margin-left: 1em;
-  line-height: 0em;
-`
+  line-height: .25em;
+`;
 
 const NavLink = styled.a`
   text-decoration: none;
-  color: black;
   text-transform: uppercase;
   font-family: "Lato", sans-serif;
   letter-spacing: 0.04em;
   font-size: 0.93em;
   cursor: pointer;
+  box-shadow: inset 0 0 0 0 black;
+  color: black;
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
   :hover {
-    background: linear-gradient(90deg, #996633 0%, #f1a48e 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    box-shadow: inset 100px 0 0 0 black;
+    color: white;
   }
 `;
 
@@ -68,65 +75,15 @@ const DesktopNavLinks = styled.div`
 
 `;
 
-const MobileNavLinks = styled.ul`
-  list-style: none;
-  margin-top: 0.5rem;
-  padding-inline-start: 1rem;
-`;
-
-const SmallNavLinkContainer = styled.div`
-  overflow: hidden;
-  &:hover {
-    cursor: pointer;
-  }
-`;
-
-const SmallMenuContainer = styled.div`
-  position: absolute;
-  z-index: 2;
-  transition: all 0.25s;
-  background: purple;
-  top: 1.2rem;
-  right: 1.2rem;
-  border-radius: 6%;
-  display: flex;
-  flex-direction: column;
-`;
-
-const SmallLinksContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin: 0rem 0 0.3rem 0;
-  > * {
-    margin: 0.9rem;
-  }
-`;
-
-const CrossContainer = styled.div`
-  position: relative;
-  margin: 0.4rem auto auto 85%;
-  &:hover {
-    cursor: pointer;
-  }
-`;
-
-const FlexEndColumn = styled(FlexColumn)`
-  justify-content: flex-end;
-`;
 
 export {
     Navbar,
     FlexColumn,
-    FlexEndColumn,
     ProfileImg,
     NavLinks,
     NavItem,
     NavText,
+    HeaderBox,
     NavLink,
     DesktopNavLinks,
-    MobileNavLinks,
-    SmallNavLinkContainer,
-    SmallMenuContainer,
-    SmallLinksContainer,
-    CrossContainer,
 };
