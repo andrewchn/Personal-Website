@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import logo from "../../imgs/Doraemon_character.png";
 import {
   Navbar,
