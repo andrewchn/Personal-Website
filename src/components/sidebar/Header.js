@@ -25,9 +25,9 @@ const Header = () => {
   return (
     <Navbar>
       <FlexColumn>
-        <a href="/#">
+        <div>          
           <ProfileImg src={logo} alt="" />
-        </a>
+        </div>
       </FlexColumn>
       <DesktopNavLinks>
           <FlexColumn>
