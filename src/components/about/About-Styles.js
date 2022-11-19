@@ -2,8 +2,10 @@ import styled from "styled-components";
 
 const AboutDiv = styled.div`
     margin-left: 20em;
-    
+    top: 0em;
+    right: 0em;
     position: absolute;
+    z-index: 1;
     
 `
 
@@ -20,8 +22,12 @@ const AboutBlurb = styled.p`
 `
 
 const AboutImg = styled.img`
+    position: absolute;
+    top: 0em;
+    right: 0em;
     margin-left: 7em;
     max-width: 30%;
+    z-index = 0;
 `
 const DivRow = styled.div`
     display: flex;
