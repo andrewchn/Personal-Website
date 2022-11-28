@@ -26,11 +26,32 @@ const AboutImg = styled.img`
     top: 0em;
     right: 0em;
     margin-left: 7em;
-    max-width: 30%;
+    width: 42%;
     z-index = 0;
 `
+const AboutImgWrapper = styled.div`
+    display: grid;
+    height: 100vh;
+    > div {
+        grid-column: 1;
+        grid-row: 1;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: var(--gray);
+        transition: opacity 0.1s;
+    }
+`
+const AboutImgBackground = styled.div`
+    background-image: url(../../imgs/white.png);
+`
+
+const AboutImgFront = styled.div`
+    background-image: url(../../imgs/tj.jpeg);
+`
+
 const DivRow = styled.div`
     display: flex;
     align-items: center;
 `
-export {AboutDiv,AboutTitle,AboutBlurb,AboutImg,DivRow};
+export { AboutDiv,AboutTitle,AboutBlurb,AboutImg };
