@@ -1,5 +1,5 @@
 // import { useState, useEffect } from "react";
-import logo from "../../imgs/Doraemon_character.png";
+import prof from "../../imgs/profile.JPG";
 import {
   Navbar,
   FlexColumn,
@@ -26,7 +26,7 @@ const Header = () => {
     <Navbar>
       <FlexColumn>
         <div>          
-          <ProfileImg src={logo} alt="" />
+          <ProfileImg src={prof} alt="" />
         </div>
       </FlexColumn>
       <DesktopNavLinks>

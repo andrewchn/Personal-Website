@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 const AboutDiv = styled.div`
     margin-left: 20em;
-    
     position: absolute;
     
 `
@@ -10,7 +9,7 @@ const AboutDiv = styled.div`
 const AboutTitle = styled.h1`
     font-size: 5em;
     margin-left: 1em;
-    margin-top: 1.5em;
+    margin-top: 1em;
 `
 
 const AboutBlurb = styled.p`
