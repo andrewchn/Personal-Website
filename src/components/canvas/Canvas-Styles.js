@@ -1,24 +1,23 @@
 import styled from "styled-components";
 
 const CanvasDiv = styled.div`
-    margin-left: 5em;
-    margin-right: 2em;
-`
+  margin-left: 6em;
+  margin-right: 3em;
+`;
 
 const CanvasButton = styled.button`
-    margin-left: 20em;
-    
-    position: absolute;
-    
-`
+    margin-left: 1em;
+    margin-right: 1em;
+`;
 
 const ButtonDiv = styled.div`
-    display: block;
-    align-items: center;
-`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
 const CanvasTitle = styled.h1`
-    text-align: center;
-`
+  text-align: center;
+`;
 
 export { CanvasDiv, CanvasButton, ButtonDiv, CanvasTitle };

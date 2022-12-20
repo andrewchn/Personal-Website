@@ -4,6 +4,10 @@ import {
   SkillsIntro,
   Cards,
   SkillList,
+  CardHeader,
+  SkillsTitle,
+  CardText,
+  SkillsIntroText,
 } from "./Skills-Styles";
 
 const cards = {
@@ -26,11 +30,10 @@ const Skills = () => {
   return (
     <SkillsSection id="skills">
       <SkillsIntro>
-        <h3>Skills</h3>
-        <p>
-          Being a combined major, I have experience with both programming and
-          theory as well as leadership and communication skills.
-        </p>
+        <SkillsTitle>Skills</SkillsTitle>
+        <SkillsIntroText>
+          Through my education and employment experiences, I have learned various technologies and development principles as well as developed an array of soft skills. 
+        </SkillsIntroText>
       </SkillsIntro>
       <Cards>
         {Object.keys(cards).map(function (keyName, keyIndex) {
@@ -42,11 +45,11 @@ const Skills = () => {
                 className="font-awesome-icon"
                 color={white}
               /> */}
-              <h4>{keyName}</h4>
+              <CardHeader>{keyName}</CardHeader>
               {cards[keyName].values.map((value) => {
                 return (
                   <li key={value}>
-                    <p>{value}</p>
+                    <CardText>{value}</CardText>
                   </li>
                 );
               })}

@@ -6,7 +6,6 @@ const Navbar = styled.nav`
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  padding-top: 1em;
   padding-left: 2.5em;
   padding-right: 2.5em;
 `;
@@ -24,7 +23,7 @@ const FlexColumn = styled.div`
 const ProfileImg = styled.img`
     max-width: 60%;
     max-height: 60%;
-    margin-top: 4em;
+    margin-top: 1.7em;
     margin-left: .75em;
     margin-bottom: 2em;
     border-radius: 50%;
@@ -70,7 +69,7 @@ const NavLink = styled.a`
   padding: 0 .25rem;
   transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
   :hover {
-    box-shadow: inset 100px 0 0 0 black;
+    box-shadow: inset 150px 0 0 0 black;
     color: white;
   }
 `;

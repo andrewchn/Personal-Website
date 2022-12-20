@@ -13,7 +13,6 @@ import {
 } from "./Header-Styles";
 
 const Header = () => {
-
   const navLinks = {
     About: "#about",
     Skills: "#skills",
@@ -24,27 +23,25 @@ const Header = () => {
   };
   return (
     <Navbar>
-      <FlexColumn>
-        <div>          
-          <ProfileImg src={prof} alt="" />
-        </div>
-      </FlexColumn>
+      <>
+        <ProfileImg src={prof} alt="" />
+      </>
       <DesktopNavLinks>
-          <FlexColumn>
-            <HeaderBox>
-              <NavText>Andrew</NavText>
-              <NavText>Chin</NavText>
-            </HeaderBox>
-            <NavLinks>
-              {Object.keys(navLinks).map((key, index) => {
-                return (
-                  <NavItem key={index}>
-                    <NavLink href={`/${navLinks[key]}`}>{key}</NavLink>
-                  </NavItem>
-                );
-              })}
-            </NavLinks>
-          </FlexColumn>
+        <FlexColumn>
+          <HeaderBox>
+            <NavText>Andrew</NavText>
+            <NavText>Chin</NavText>
+          </HeaderBox>
+          <NavLinks>
+            {Object.keys(navLinks).map((key, index) => {
+              return (
+                <NavItem key={index}>
+                  <NavLink href={`/${navLinks[key]}`}>{key}</NavLink>
+                </NavItem>
+              );
+            })}
+          </NavLinks>
+        </FlexColumn>
       </DesktopNavLinks>
     </Navbar>
   );
