@@ -17,16 +17,25 @@ const AboutBlurb = styled.p`
     margin-bottom: 1.3em;
 `
 
-const AboutQuote = styled.p`
+const AboutQuote = styled.div`
     text-align: right;
     margin-left: 4em;
     font-size: 2.1em;
     font-style: italic;
+    font-weight: bold;
 `
 
-const AboutImg = styled.img`
+const QuoteDiv = styled.div`
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5em;
+    margin-top: 4em;
+`
+
+const QuoteImg = styled.img`
     margin-left: 7em;
-    max-width: 30%;
+    max-width: 8%;
+    margin-left: 91%
 `
 const DivRow = styled.div`
     display: flex;
@@ -37,4 +46,4 @@ const TextDiv = styled.div`
     display: flex;
     flex-direction: column;
 `
-export { AboutDiv, AboutTitle, AboutBlurb, AboutImg, DivRow, TextDiv, AboutQuote };
+export { AboutDiv, AboutTitle, AboutBlurb, QuoteImg, DivRow, TextDiv, AboutQuote, QuoteDiv };

@@ -33,21 +33,21 @@ class Canvas extends Component {
               );
             }}
           >
-            Save
+            SEND
           </CanvasButton>
           <CanvasButton
             onClick={() => {
               this.saveableCanvas.eraseAll();
             }}
           >
-            Erase
+            ERASE
           </CanvasButton>
           <CanvasButton
             onClick={() => {
               this.saveableCanvas.undo();
             }}
           >
-            Undo
+            UNDO
           </CanvasButton>
         </ButtonDiv>
       </CanvasDiv>

@@ -5,8 +5,11 @@ import {
   DivRow,
   TextDiv,
   AboutQuote,
+  QuoteDiv,
+  QuoteImg,
 } from "./About-Styles.js";
 import Canvas from "../canvas/Canvas.js";
+import jay from "../../imgs/jayz.jpg";
 
 const About = () => {
   return (
@@ -23,12 +26,13 @@ const About = () => {
           <AboutBlurb>
             On this website, I share some of my professional accomplishments and
             abilities, as well as some personal interests. In the words of Jay
-            Z, 
+            Z,
           </AboutBlurb>
-          <AboutQuote>
-          "What you about to witness is my thoughts (Just my thoughts,
-            man)"
-          </AboutQuote>
+          <QuoteDiv>
+            <AboutQuote>"What you about to witness is my thoughts</AboutQuote>
+            <AboutQuote>(Just my thoughts, man)"</AboutQuote>
+            <QuoteImg src={jay} alt=""/>
+          </QuoteDiv>
         </TextDiv>
         <Canvas />
       </DivRow>

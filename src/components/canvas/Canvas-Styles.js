@@ -6,8 +6,15 @@ const CanvasDiv = styled.div`
 `;
 
 const CanvasButton = styled.button`
+    margin-top: 0.5em;
     margin-left: 1em;
     margin-right: 1em;
+    font-family: "Lato", sans-serif;
+    font-size: 1em;
+    :hover {
+      box-shadow: inset 150px 0 0 0 black;
+      color: white;
+    }
 `;
 
 const ButtonDiv = styled.div`

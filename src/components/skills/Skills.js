@@ -8,21 +8,22 @@ import {
   SkillsTitle,
   CardText,
   SkillsIntroText,
+  CardItem,
 } from "./Skills-Styles";
 
 const cards = {
   Coding: {
-    values: ["Java", "HTML/CSS", "JavaScript", "SQL", "Python"],
+    values: ["Python", "HTML/CSS", "JavaScript", "SQL", "Java"],
   },
   Frameworks: {
-    values: ["React", "Swing", "Freemarker", "Node.js", "Bootstrap"],
+    values: ["React", "Swing", "Node.js", "Bootstrap"],
   },
   Concepts: {
-    values: ["OOP", "Data Analysis", "Marketing", "UI/UX", "Mobile App"],
+    values: ["OOP", "Function Programming", "Agile", "UI/UX", "Mobile App"],
   },
   Tools: {
     // icon: faHammer,
-    values: ["Git", "Shopify", "Figma", "Docker", "MongoDB"],
+    values: ["Git", "AWS", "Unix", "Docker", "DBeaver"],
   },
 };
 
@@ -48,9 +49,9 @@ const Skills = () => {
               <CardHeader>{keyName}</CardHeader>
               {cards[keyName].values.map((value) => {
                 return (
-                  <li key={value}>
+                  <CardItem key={value}>
                     <CardText>{value}</CardText>
-                  </li>
+                  </CardItem>
                 );
               })}
             </SkillList>

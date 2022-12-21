@@ -24,9 +24,12 @@ const Cards = styled.div`
   justify-content: space-between;
 `;
 
+const CardItem = styled.li`
+  display: none;
+`
 const CardHeader = styled.h2`
   font-size: 2.2em;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
 `;
 
 const CardText = styled.p`
@@ -34,15 +37,25 @@ const CardText = styled.p`
 `;
 
 const SkillList = styled.ul`
-  background: orange;
+  background: #cfd8d1;
   list-style: none;
   padding-inline-start: 0;
   width: 24%;
+  height: 22em;
   text-align: center;
   padding-top: 2.5em;
   padding-bottom: 2.5em;
   margin-bottom: 8em;
   border-radius: 2em;
+  &:hover {
+    background: #cfd8d7;
+  }
+  &:hover ${CardItem} {
+    display: block;
+  }
+  &:hover ${CardHeader} {
+    font-weight: bold;
+  }
 `;
 
 export {
@@ -54,4 +67,5 @@ export {
   SkillsTitle,
   CardText,
   SkillsIntroText,
+  CardItem,
 };
