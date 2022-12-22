@@ -19,7 +19,7 @@ const cards = {
     values: ["React", "Swing", "Node.js", "Bootstrap"],
   },
   Concepts: {
-    values: ["OOP", "Function Programming", "Agile", "UI/UX", "Mobile App"],
+    values: ["OOP", "Relational DBs", "Agile", "UI/UX", "Mobile App"],
   },
   Tools: {
     // icon: faHammer,

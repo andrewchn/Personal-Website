@@ -11,6 +11,7 @@ import {
   NavLink,
   DesktopNavLinks,
 } from "./Header-Styles";
+import resume from "../../assets/AndrewChinResumeForCoop.pdf";
 
 const Header = () => {
   const navLinks = {
@@ -34,6 +35,13 @@ const Header = () => {
           </HeaderBox>
           <NavLinks>
             {Object.keys(navLinks).map((key, index) => {
+              if (key === "Resume") {
+                return (
+                  <NavItem key={index}>
+                    <NavLink href={resume} target="_blank">{key}</NavLink>
+                  </NavItem>
+                );
+              }
               return (
                 <NavItem key={index}>
                   <NavLink href={`/${navLinks[key]}`}>{key}</NavLink>
