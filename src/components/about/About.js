@@ -13,7 +13,7 @@ import jay from "../../imgs/jayz.jpg";
 
 const About = () => {
   return (
-    <AboutDiv>
+    <AboutDiv id="about">
       <AboutTitle>Hi, I'm Andrew.</AboutTitle>
       <DivRow>
         <TextDiv>

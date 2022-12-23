@@ -1,4 +1,3 @@
-
 import {
   SkillsSection,
   SkillsIntro,
@@ -33,7 +32,9 @@ const Skills = () => {
       <SkillsIntro>
         <SkillsTitle>Skills</SkillsTitle>
         <SkillsIntroText>
-          Through my education and employment experiences, I have learned various technologies and development principles as well as developed an array of soft skills. 
+          Through my education and employment experiences, I have learned
+          various technologies and development principles as well as developed
+          an array of soft skills.
         </SkillsIntroText>
       </SkillsIntro>
       <Cards>

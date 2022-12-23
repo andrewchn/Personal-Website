@@ -1,21 +1,12 @@
 import Gallery from "react-photo-gallery";
+import {photos} from "./photos.js"
+import { InterestsSection } from "./Interests-Styles.js";
 
 const Interests = () => {
-    const photos = [
-        {
-          src: 'https://source.unsplash.com/Dm-qxdynoEc/800x799',
-          width: 4,
-          height: 3
-        },
-        {
-          src: '../../imgs/jayz.jpg',
-          width: 1,
-          height: 1
-        }
-      ];
-      
     return (
+      <InterestsSection>
         <Gallery photos={photos} />
+      </InterestsSection>
     );
 };
 
