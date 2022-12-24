@@ -8,6 +8,7 @@ const Navbar = styled.nav`
   flex-direction: column;
   padding-left: 2.5em;
   padding-right: 2.5em;
+  margin-top: 4em;
 `;
 
 const FlexColumn = styled.div`

@@ -14,13 +14,13 @@ const Interests = () => {
       <InterestsBlurb>
         I first got into photography three years ago when I stole my dad's
         Pentax K1000 film camera from his closet. Initially, I was drawn to
-        photography because it was a way for me to capture moments with people
-        who I was scared of losing. But as I spent more time capturing moments,
-        I began to appreciate the capability that film has to capture emotions
-        at a split second in time. In each photo I take, I aim to capture
-        exactly what I was feeling in that moment through the camera lens, so
-        that when I look back at the photos later I can fully recall not only
-        what was happening but also how it felt.
+        photography because it was a way for me to document fun activities I was
+        doing. But as I spent more time capturing moments, I began to appreciate
+        the capability that film has to capture emotions at a split second in
+        time. In each photo I take, I aim to capture exactly what I was feeling
+        in that moment through the camera lens, so that when I look back at the
+        photos later I can fully recall not only what was happening but also how
+        it felt.
       </InterestsBlurb>
       <Lightbox />
       <InterestsSubheading>Eating</InterestsSubheading>
