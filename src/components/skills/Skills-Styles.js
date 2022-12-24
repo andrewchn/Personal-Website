@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 const SkillsSection = styled.div`
-  margin-top: 10rem;
+  padding-top: 2em;
+  margin-top: 7rem;
   margin-left: 24em;
   margin-right: 5em;
 `;

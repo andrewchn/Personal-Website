@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 const AboutDiv = styled.div`
-    margin-left: 20em;    
+    margin-left: 18.5em;    
+    padding-top: 2em;
 `
 
 const AboutTitle = styled.h1`

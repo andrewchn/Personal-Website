@@ -3,6 +3,7 @@ import { render } from "react-dom";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import { photos } from "./photos";
+import {LightboxDiv} from "./Interests-Styles.js"
 
 function Lightbox() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -19,7 +20,7 @@ function Lightbox() {
   };
 
   return (
-    <div>
+    <LightboxDiv>
       <Gallery photos={photos} onClick={openLightbox} />
       <ModalGateway>
         {viewerIsOpen ? (
@@ -35,7 +36,8 @@ function Lightbox() {
           </Modal>
         ) : null}
       </ModalGateway>
-    </div>
+    </LightboxDiv>
   );
 }
-render(<Lightbox />, document.getElementById("Lightbox"));
+
+export default Lightbox;
