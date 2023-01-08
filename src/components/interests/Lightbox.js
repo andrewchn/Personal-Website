@@ -1,9 +1,8 @@
 import React, { useState, useCallback } from "react";
-import { render } from "react-dom";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import { photos } from "./photos";
-import {LightboxDiv} from "./Interests-Styles.js"
+import { LightboxDiv } from "./Interests-Styles.js";
 
 function Lightbox() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -21,16 +20,16 @@ function Lightbox() {
 
   return (
     <LightboxDiv>
-      <Gallery photos={photos} onClick={openLightbox} />
+      <Gallery photos={photos} onClick={openLightbox}/>
       <ModalGateway>
         {viewerIsOpen ? (
           <Modal onClose={closeLightbox}>
             <Carousel
               currentIndex={currentImage}
-              views={photos.map(x => ({
+              views={photos.map((x) => ({
                 ...x,
                 srcset: x.srcSet,
-                caption: x.title
+                caption: x.title,
               }))}
             />
           </Modal>

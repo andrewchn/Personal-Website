@@ -3,8 +3,10 @@ import styled from "styled-components";
 const SkillsSection = styled.div`
   padding-top: 2em;
   margin-top: 7rem;
-  margin-left: 24em;
-  margin-right: 5em;
+  margin-left: 18.5em;   
+  margin-right: 1em;
+  border-radius: 2em;
+  background-color: #7a9e9f;
 `;
 
 const SkillsIntro = styled.div`
@@ -13,15 +15,19 @@ const SkillsIntro = styled.div`
 
 const SkillsTitle = styled.h1`
   font-size: 4em;
+  margin-left: 1em;
 `;
 
 const SkillsIntroText = styled.p`
   font-size: 1.4em;
+  margin-left: 3em;
 `
 
 const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
+  margin-left: 1em;
+  margin-right: 1em;
   justify-content: space-between;
 `;
 

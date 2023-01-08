@@ -4,6 +4,7 @@ import {
   InterestsSubheading,
   InterestsBlurb,
   InterestsRow,
+  InterestsCol,
   SideImage,
 } from "./Interests-Styles.js";
 import Lightbox from "./Lightbox.js";
@@ -34,8 +35,7 @@ const Interests = () => {
           having lived here my whole life, that has made me even more motivated
           to explore and discover the true culinary gems of my city. Every week
           I endeavor to visit at least one new restaurant, and then record my
-          thoughts on the dining experience in the Notes app on my phone. Below
-          are some excerpts from my informal reviews.
+          thoughts on the dining experience in the Notes app on my phone. 
         </InterestsBlurb>
         <SideImage src={eating}/>
       </InterestsRow>

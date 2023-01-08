@@ -8,7 +8,12 @@ const Navbar = styled.nav`
   flex-direction: column;
   padding-left: 2.5em;
   padding-right: 2.5em;
-  margin-top: 4em;
+  margin-left: 2em;
+  width: 10em;
+  margin-top: 2.5em;
+  background-color: #dadad9;
+  padding-bottom: 1.5em;
+  border-radius: 1em;
 `;
 
 const FlexColumn = styled.div`
@@ -22,10 +27,8 @@ const FlexColumn = styled.div`
 `;
 
 const ProfileImg = styled.img`
-    max-width: 60%;
-    max-height: 60%;
+    width: 100%;
     margin-top: 1.7em;
-    margin-left: .75em;
     margin-bottom: 2em;
     border-radius: 50%;
     border-style: solid;
@@ -37,6 +40,7 @@ const NavLinks = styled.ul`
   list-style: none;
   align-items: flex-start;
   flex-direction: column;
+  padding-inline-start: 0.1em;
 `;
 
 const NavItem = styled.li`
@@ -48,7 +52,6 @@ const NavItem = styled.li`
 
 const HeaderBox = styled.div`
   align-items: flex-start;
-  margin-left: 2.2em;
 `;
 
 const NavText = styled.h1`

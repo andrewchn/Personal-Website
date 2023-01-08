@@ -2,7 +2,12 @@ import styled from "styled-components";
 
 const AboutDiv = styled.div`
     margin-left: 18.5em;    
-    padding-top: 2em;
+    margin-top: 1em;
+    margin-right: 1em;
+    padding-top: 0.01em;
+    padding-bottom: 3em;
+    border-radius: 2em;
+    background-color: #b8d8d8;
 `
 
 const AboutTitle = styled.h1`
@@ -31,6 +36,10 @@ const QuoteDiv = styled.div`
     flex-direction: column;
     row-gap: 1.5em;
     margin-top: 4em;
+    background-color: #ff8360;
+    margin-left: 5.5em;
+    padding: 1em 3em 1em 0em;
+    border-radius: 2em;
 `
 
 const QuoteImg = styled.img`
