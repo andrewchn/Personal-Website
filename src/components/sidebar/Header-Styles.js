@@ -11,7 +11,7 @@ const Navbar = styled.nav`
   margin-left: 2em;
   width: 10em;
   margin-top: 2.5em;
-  background-color: #dadad9;
+  background-color: #efefef;
   padding-bottom: 1.5em;
   border-radius: 1em;
 `;

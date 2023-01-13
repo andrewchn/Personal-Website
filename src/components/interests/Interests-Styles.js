@@ -8,7 +8,7 @@ const InterestsSection = styled.div`
   display: flex;
   flex-direction: column;
   border-radius: 2em;
-  background-color: #7a9e9f;
+  background-color: #dcc7aa;
 `;
 
 const InterestsTitle = styled.h1`
@@ -32,7 +32,7 @@ const InterestsBlurb = styled.p`
     line-height: 1.2em;
     margin-right: 5em;
     margin-left: 3.5em;
-    background-color: #7dce82;
+    background-color: #f7c331;
     padding: 1em 1em 1em 1em;
     border-radius: 2em;
 `

@@ -7,7 +7,7 @@ const AboutDiv = styled.div`
     padding-top: 0.01em;
     padding-bottom: 3em;
     border-radius: 2em;
-    background-color: #b8d8d8;
+    background-color: #dcc7aa;
 `
 
 const AboutTitle = styled.h1`
@@ -36,7 +36,7 @@ const QuoteDiv = styled.div`
     flex-direction: column;
     row-gap: 1.5em;
     margin-top: 4em;
-    background-color: #ff8360;
+    background-color: #f7c331;
     margin-left: 5.5em;
     padding: 1em 3em 1em 0em;
     border-radius: 2em;

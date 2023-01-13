@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "LatoRegular";
+    src: local("LatoRegular"),
+     url("./assets/fonts/Lato-Regular.ttf") format("truetype");
+}
+
 .App {
-    font-family: "Lato", sans-serif;
+    font-family: "LatoRegular";
 }

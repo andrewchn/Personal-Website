@@ -6,7 +6,7 @@ const SkillsSection = styled.div`
   margin-left: 18.5em;   
   margin-right: 1em;
   border-radius: 2em;
-  background-color: #7a9e9f;
+  background-color: #dcc7aa;
 `;
 
 const SkillsIntro = styled.div`
@@ -32,7 +32,7 @@ const Cards = styled.div`
 `;
 
 const CardItem = styled.li`
-  display: none;
+
 `
 const CardHeader = styled.h2`
   font-size: 2.2em;
@@ -44,24 +44,20 @@ const CardText = styled.p`
 `;
 
 const SkillList = styled.ul`
-  background: #cfd8d1;
+  background: #f7c331;
   list-style: none;
   padding-inline-start: 0;
   width: 24%;
   height: 22em;
   text-align: center;
   padding-top: 2.5em;
-  padding-bottom: 2.5em;
+  padding-bottom: 3em;
   margin-bottom: 8em;
   border-radius: 2em;
+  transition: transform .2s;
   &:hover {
-    background: #cfd8d7;
-  }
-  &:hover ${CardItem} {
-    display: block;
-  }
-  &:hover ${CardHeader} {
-    font-weight: bold;
+    background: #f7882f;
+    transform: scale(1.05);
   }
 `;
 

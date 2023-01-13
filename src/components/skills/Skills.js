@@ -10,18 +10,23 @@ import {
   CardItem,
 } from "./Skills-Styles";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCodeBranch, faBorderAll, faLightbulb, faToolbox } from "@fortawesome/free-solid-svg-icons";
 const cards = {
   Coding: {
+    icon: faCodeBranch,
     values: ["Python", "HTML/CSS", "JavaScript", "SQL", "Java"],
   },
   Frameworks: {
+    icon: faBorderAll,
     values: ["React", "Swing", "Node.js", "Bootstrap"],
   },
   Concepts: {
+    icon: faLightbulb,
     values: ["OOP", "Relational DBs", "Agile", "UI/UX", "Mobile App"],
   },
   Tools: {
-    // icon: faHammer,
+    icon: faToolbox,
     values: ["Git", "AWS", "Unix", "Docker", "DBeaver"],
   },
 };
@@ -41,12 +46,11 @@ const Skills = () => {
         {Object.keys(cards).map(function (keyName, keyIndex) {
           return (
             <SkillList key={keyIndex}>
-              {/* <FontAwesomeIcon
+              <FontAwesomeIcon
                 icon={cards[keyName].icon}
                 size="2xl"
                 className="font-awesome-icon"
-                color={white}
-              /> */}
+              />
               <CardHeader>{keyName}</CardHeader>
               {cards[keyName].values.map((value) => {
                 return (
