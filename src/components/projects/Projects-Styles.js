@@ -17,7 +17,7 @@ const ProjectsTitle = styled.h1`
 `;
 
 const ProjectsIntro = styled.p`
-
+  
 `;
 
 const ProjectsCards = styled.div`
@@ -29,10 +29,10 @@ const ProjectsCard = styled.div`
     background-color: #6b7a8f;
     width: 35%;
     color: white;
-    margin: 0em 4em 3em 3em;
+    margin: 0em 2.5em 3em 3em;
     border-radius: 1em;
     transition: transform .2s;
-    padding: 0em 0em 2em 1.5em;
+    padding: 0em 2em 2em 1.5em;
     &:hover {
       transform: scale(1.05);
     }

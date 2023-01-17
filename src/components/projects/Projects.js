@@ -9,31 +9,33 @@ import {
   CardBlurb,
   CardLink,
 } from "./Projects-Styles";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub  } from '@fortawesome/free-brands-svg-icons'
 
 const projectList = [
   {
     name: "SmartCalendar",
     img: "",
-    desc: "dobebebegbedo",
-    url: "google.com",
+    desc: "Smart Calendar is a Calendar Android app written in Java with a Firebase backend that intelligently places non time-sensitive events in a user's schedule. ",
+    url: "https://github.com/andrewchn/SmartCalendar",
   },
   {
-    name: "SmartCalendar",
+    name: "Personal Website",
     img: "",
-    desc: "dobebebegbedo",
-    url: "google.com",
+    desc: "The website you are viewing right now! Written using JavaScript and React and hosted using Netlify.",
+    url: "https://github.com/andrewchn/Personal-Website",
   },
   {
-    name: "SmartCalendar",
+    name: "Tabbify",
     img: "",
-    desc: "dobebebegbedo",
-    url: "google.com",
+    desc: "A Chrome extension written in JavaScript, HTML and CSS that makes calls to the Spotify API to recommend a new song to the user every time the extension is opened.",
+    url: "https://github.com/andrewchn/Tabbify",
   },
   {
-    name: "SmartCalendar",
+    name: "Image Processor",
     img: "",
-    desc: "dobebebegbedo",
-    url: "google.com",
+    desc: "An image processing application written in Java with a JavaSwing frontend that allows users to perform basic edits to image files. Utilized some mathematical algorithms to allow users to apply more complex filters to edited images.",
+    url: "https://github.com/andrewchn/Image-Processor",
   },
 ];
 const Projects = () => {
@@ -48,7 +50,9 @@ const Projects = () => {
               <CardImg src={project.img} />
               <CardTitle>{project.name}</CardTitle>
               <CardBlurb>{project.desc}</CardBlurb>
-              <CardLink href={project.url}>Github</CardLink>
+              <CardLink href={project.url}>
+                <FontAwesomeIcon icon={faGithub} size="3x" color="black" />
+            </CardLink>
             </ProjectsCard>
           );
         })}

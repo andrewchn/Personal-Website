@@ -26,7 +26,7 @@ const Contact = () => {
         {socialMedias.map((socialMedia) => {
           return (
             <SocialMedia href={socialMedia.url} target="_blank">
-                <FontAwesomeIcon icon={socialMedia.icon} />
+                <FontAwesomeIcon icon={socialMedia.icon} color="white"/>
             </SocialMedia>
           );
         })}
