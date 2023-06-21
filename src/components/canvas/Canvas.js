@@ -57,7 +57,9 @@ class Canvas extends Component {
           </CanvasButton>
           <CanvasButton
             onClick={() => {
-              this.saveableCanvas.undo();
+              if (!this.state.sent) {
+                this.saveableCanvas.undo();
+              }
             }}
           >
             UNDO

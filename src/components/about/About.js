@@ -18,23 +18,17 @@ const About = () => {
       <DivRow>
         <TextDiv>
           <AboutBlurb>
-            I am third year Northeastern University student majoring in Computer
+            I am fourth year Northeastern University student majoring in Computer
             Science with a concentration in Software Development. I find it
             fascinating that with just a few lines of code, we can develop
             programs that can do anything.
           </AboutBlurb>
           <AboutBlurb>
             On this website, I share some of my professional accomplishments and
-            abilities, as well as some personal interests. In the words of Jay
-            Z,
+            abilities, as well as some personal interests.
           </AboutBlurb>
-          <QuoteDiv>
-            <AboutQuote>"What you about to witness is my thoughts</AboutQuote>
-            <AboutQuote>(Just my thoughts, man)"</AboutQuote>
-            <QuoteImg src={jay} alt=""/>
-          </QuoteDiv>
         </TextDiv>
-        <Canvas />
+        <Canvas/>
       </DivRow>
     </AboutDiv>
   );
