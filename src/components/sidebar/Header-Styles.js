@@ -1,7 +1,7 @@
 import styled from "styled-components";
+import {devices} from "../../constants/devices"
 
-
-const Navbar = styled.nav`
+const DesktopNavbar = styled.nav`
   position: fixed;
   display: flex;
   align-items: flex-start;
@@ -14,6 +14,16 @@ const Navbar = styled.nav`
   background-color: #efefef;
   padding-bottom: 1.5em;
   border-radius: 1em;
+
+  @media ${devices.mobile} {
+    display: none;
+  }
+  @media ${devices.tablet} {
+    display: none;
+  }
+  @media ${devices.laptop} {
+    display: flex;
+  }
 `;
 
 const FlexColumn = styled.div`
@@ -102,7 +112,7 @@ const DesktopNavLinks = styled.div`
 
 
 export {
-    Navbar,
+    DesktopNavbar as Navbar,
     FlexColumn,
     ProfileImg,
     NavLinks,

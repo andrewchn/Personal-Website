@@ -1,9 +1,10 @@
 import styled from "styled-components";
+import { styles } from "../shared/Shared-Styles"
 
 const ProjectsSection = styled.div`
   padding-top: 2em;
   margin-top: 7em;
-  margin-left: 18.5em;
+  ${styles.section}
   margin-right: 1em;
   display: flex;
   flex-direction: column;

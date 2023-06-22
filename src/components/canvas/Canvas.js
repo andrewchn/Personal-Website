@@ -11,8 +11,8 @@ import CanvasDraw from "react-canvas-draw";
 class Canvas extends Component {
   state = {
     color: "black",
-    width: 400,
-    height: 400,
+    width: 350,
+    height: 350,
     brushRadius: 10,
     lazyRadius: 12,
     sent: false,

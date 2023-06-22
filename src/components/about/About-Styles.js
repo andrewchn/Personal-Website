@@ -1,9 +1,13 @@
 import styled from "styled-components";
+import { devices } from "../../constants/devices";
+import { styles } from "../shared/Shared-Styles";
 
 const AboutDiv = styled.div`
   display: flex;
   flex-direction: column;
-  margin-left: 18.5em;
+
+  ${styles.section}
+
   margin-top: 1em;
   margin-right: 1em;
   padding-top: 0.01em;
@@ -27,11 +31,22 @@ const AboutBlurb = styled.p`
 
 const DivRow = styled.div`
   display: flex;
+
+  @media ${devices.mobile} {
+    flex-direction: column;
+  }
+  @media ${devices.tablet} {
+    flex-direction: column;
+  }
+  @media ${devices.laptop} {
+    flex-direction: row;
+  }
   align-items: flex-start;
 `;
 
 const TextDiv = styled.div`
   display: flex;
   flex-direction: column;
+  padding-right: 3.5em;
 `;
 export { AboutDiv, AboutTitle, AboutBlurb, DivRow, TextDiv };

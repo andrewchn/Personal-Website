@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import { styles } from "../shared/Shared-Styles"
 
 const ContactDiv = styled.div`
     margin-top: 10em;
-    margin-left: 18.5em;
+    ${styles.section}
     align-items: center;
     background-color: #dcc7aa;
     border-radius: 2em;

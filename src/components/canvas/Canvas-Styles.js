@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const CanvasDiv = styled.div`
-  margin-left: 6em;
+  margin-left: 5.5em;
   margin-right: 3em;
 `;
 
