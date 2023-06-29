@@ -1,9 +1,12 @@
 import styled from "styled-components";
-
+import { devices } from "../../constants/devices";
+import { styles } from "../shared/Shared-Styles";
 const SkillsSection = styled.div`
   padding-top: 2em;
   margin-top: 7rem;
-  margin-left: 18.5em;   
+
+  ${styles.section}
+
   margin-right: 1em;
   border-radius: 2em;
   background-color: #dcc7aa;
@@ -21,7 +24,7 @@ const SkillsTitle = styled.h1`
 const SkillsIntroText = styled.p`
   font-size: 1.4em;
   margin-left: 3em;
-`
+`;
 
 const Cards = styled.div`
   display: flex;
@@ -29,11 +32,22 @@ const Cards = styled.div`
   margin-left: 1em;
   margin-right: 1em;
   justify-content: space-between;
+
+  @media ${devices.mobile} {
+    flex-direction: column;
+    align-items: center;
+  }
+  @media ${devices.tablet} {
+    flex-direction: column;
+    align-items: center;
+  }
+  @media ${devices.laptop} {
+    flex-direction: row;
+  }
 `;
 
-const CardItem = styled.li`
+const CardItem = styled.li``;
 
-`
 const CardHeader = styled.h2`
   font-size: 2.2em;
   margin-bottom: 1em;
@@ -47,14 +61,22 @@ const SkillList = styled.ul`
   background: #f7c331;
   list-style: none;
   padding-inline-start: 0;
-  width: 24%;
+  @media ${devices.mobile} {
+    width: 85%;
+  }
+  @media ${devices.tablet} {
+    width: 85%;
+  }
+  @media ${devices.laptop} {
+    width: 24%;
+    margin-bottom: 8em;
+  }
   height: 22em;
   text-align: center;
   padding-top: 2.5em;
   padding-bottom: 3em;
-  margin-bottom: 8em;
   border-radius: 2em;
-  transition: transform .2s;
+  transition: transform 0.2s;
   &:hover {
     background: #f7882f;
     transform: scale(1.05);

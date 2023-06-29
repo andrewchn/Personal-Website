@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import {devices} from "../../constants/devices"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-
-const Navbar = styled.nav`
+const DesktopNavbar = styled.nav`
   position: fixed;
   display: flex;
   align-items: flex-start;
@@ -14,6 +15,42 @@ const Navbar = styled.nav`
   background-color: #efefef;
   padding-bottom: 1.5em;
   border-radius: 1em;
+  box-shadow: 0 2px 4px black;
+
+  @media ${devices.mobileMax} {
+    display: none;
+  }
+  @media ${devices.tabletMax} {
+    display: none;
+  }
+  @media ${devices.laptop} {
+    display: flex;
+  }
+`;
+
+const MobileNavbar = styled.nav`
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  border-radius: 1em;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 10%;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  background-color: #efefef;
+  box-shadow: 0 2px 4px black;
+  @media ${devices.mobileMax} {
+    display: flex;
+  }
+  @media ${devices.tabletMax} {
+    display: flex;
+  }
+  @media ${devices.laptop} {
+    display: none;
+  }
 `;
 
 const FlexColumn = styled.div`
@@ -33,13 +70,22 @@ const ProfileImg = styled.img`
     border-radius: 50%;
     border-style: solid;
     border-color: black;
+    box-shadow: 0 2px 2px black;
 `;
 
 const NavLinks = styled.ul`
   display: flex;
   list-style: none;
   align-items: flex-start;
-  flex-direction: column;
+  @media ${devices.mobileMax} {
+    flex-direction: row;
+  }
+  @media ${devices.tabletMax} {
+    flex-direction: row;
+  }
+  @media ${devices.laptop} {
+    flex-direction: column;
+  }
   padding-inline-start: 0.1em;
 `;
 
@@ -47,6 +93,14 @@ const NavItem = styled.li`
   margin-bottom: 0.2em;
   &:last-child {
     margin-right: 0;
+  }
+  @media ${devices.mobileMax} {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  @media ${devices.tabletMax} {
+    margin-left: 3em;
+    margin-right: 3em;
   }
 `;
 
@@ -78,6 +132,19 @@ const NavLink = styled.a`
   }
 `;
 
+const MobileNavLink = styled(FontAwesomeIcon)`
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 black;
+  color: black;
+  margin: 0 -.25rem;
+  padding: .1rem .25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  :hover {
+    box-shadow: inset 150px 0 0 0 black;
+    color: white;
+  }
+`;
+
 // const SubLink = styled.a`
 //   text-decoration: none;
 //   text-transform: uppercase;
@@ -102,7 +169,7 @@ const DesktopNavLinks = styled.div`
 
 
 export {
-    Navbar,
+    DesktopNavbar,
     FlexColumn,
     ProfileImg,
     NavLinks,
@@ -111,4 +178,6 @@ export {
     HeaderBox,
     NavLink,
     DesktopNavLinks,
+    MobileNavbar,
+    MobileNavLink,
 };

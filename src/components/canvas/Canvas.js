@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+
 import {
   CanvasDiv,
   CanvasButton,
@@ -11,8 +12,8 @@ import CanvasDraw from "react-canvas-draw";
 class Canvas extends Component {
   state = {
     color: "black",
-    width: 400,
-    height: 400,
+    width: 350,
+    height: 350,
     brushRadius: 10,
     lazyRadius: 12,
     sent: false,
@@ -20,6 +21,7 @@ class Canvas extends Component {
     disabled: false,
   };
 
+  
   render() {
     return (
       <CanvasDiv>
@@ -57,7 +59,9 @@ class Canvas extends Component {
           </CanvasButton>
           <CanvasButton
             onClick={() => {
-              this.saveableCanvas.undo();
+              if (!this.state.sent) {
+                this.saveableCanvas.undo();
+              }
             }}
           >
             UNDO

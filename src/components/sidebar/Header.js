@@ -1,7 +1,7 @@
 // import { useState, useEffect } from "react";
 import prof from "../../imgs/profile.JPG";
 import {
-  Navbar,
+  DesktopNavbar,
   FlexColumn,
   ProfileImg,
   NavLinks,
@@ -10,48 +10,100 @@ import {
   HeaderBox,
   NavLink,
   DesktopNavLinks,
+  MobileNavbar,
+  MobileNavLink,
 } from "./Header-Styles";
 import resume from "../../assets/AndrewChinResumeForCoop.pdf";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAddressCard, faToolbox, faAddressBook, faCameraRetro, faFile, faHammer } from "@fortawesome/free-solid-svg-icons";
 const Header = () => {
-  const navLinks = {
-    About: "#about",
-    Skills: "#skills",
-    Projects: "#projects",
-    Interests: "#interests",
-    Resume: "#resume",
-    Contact: "#contact",
-  };
+
+  const navLinks = [
+    {
+      name: "About",
+      tag: "#about",
+      icon: faAddressCard,
+    },
+    {
+      name: "Skills",
+      tag: "#skills",
+      icon: faToolbox,
+    },
+    {
+      name: "Projects",
+      tag: "#projects",
+      icon: faHammer,
+    },
+    {
+      name: "Interests",
+      tag: "#interests",
+      icon: faCameraRetro,
+    },
+    {
+      name: "Resume",
+      tag: "#resume",
+      icon: faFile,
+    },
+    {
+      name: "Contact",
+      tag: "#contact",
+      icon: faAddressBook,
+    },
+  ];
   return (
-    <Navbar>
-      <>
-        <ProfileImg src={prof} alt="" />
-      </>
-      <DesktopNavLinks>
+    <>
+      <DesktopNavbar>
+        <>
+          <ProfileImg src={prof} alt="" />
+        </>
         <FlexColumn>
           <HeaderBox>
             <NavText>Andrew</NavText>
             <NavText>Chin</NavText>
           </HeaderBox>
           <NavLinks>
-            {Object.keys(navLinks).map((key, index) => {
-              if (key === "Resume") {
+            {navLinks.map((item) => {
+              if (item.name === "Resume") {
                 return (
-                  <NavItem key={index}>
-                    <NavLink href={resume} target="_blank">{key}</NavLink>
+                  <NavItem key={item.name}>
+                    <NavLink href={resume} target="_blank">
+                      {item.name}
+                    </NavLink>
                   </NavItem>
                 );
               }
               return (
-                <NavItem key={index}>
-                  <NavLink href={`/${navLinks[key]}`}>{key}</NavLink>
+                <NavItem key={item.name}>
+                  <NavLink href={`/${item.tag}`}>{item.name}</NavLink>
                 </NavItem>
               );
             })}
           </NavLinks>
         </FlexColumn>
-      </DesktopNavLinks>
-    </Navbar>
+      </DesktopNavbar>
+      <MobileNavbar>
+        <NavLinks>
+          {navLinks.map((item) => {
+            if (item.name === "Resume") {
+              return (
+                <NavItem key={item.name}>
+                  <a href={resume} target="_blank" rel="noreferrer">
+                    <MobileNavLink icon={item.icon} color="black" size="2xl" />
+                  </a>
+                </NavItem>
+              );
+            }
+            return (
+              <NavItem key={item.name}>
+                <a href={`/${item.tag}`}>
+                  <MobileNavLink icon={item.icon} color="black" size="2xl" />
+                </a>
+              </NavItem>
+            );
+          })}
+        </NavLinks>
+      </MobileNavbar>
+    </>
   );
 };
 

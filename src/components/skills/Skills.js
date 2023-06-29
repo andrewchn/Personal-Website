@@ -13,13 +13,13 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCodeBranch, faBorderAll, faLightbulb, faToolbox } from "@fortawesome/free-solid-svg-icons";
 const cards = {
-  Coding: {
+  Languages: {
     icon: faCodeBranch,
-    values: ["Python", "HTML/CSS", "JavaScript", "SQL", "Java"],
+    values: ["Python", "HTML/CSS", "Node.js", "SQL", "Java"],
   },
-  Frameworks: {
+  Technologies: {
     icon: faBorderAll,
-    values: ["React", "Swing", "Node.js", "Bootstrap"],
+    values: ["React", "Chakra UI", "AWS", "MongoDB", "Firebase"],
   },
   Concepts: {
     icon: faLightbulb,
