@@ -63,9 +63,11 @@ const SkillList = styled.ul`
   padding-inline-start: 0;
   @media ${devices.mobile} {
     width: 85%;
+    margin-bottom: 2em;
   }
   @media ${devices.tablet} {
     width: 85%;
+    margin-bottom: 3em;
   }
   @media ${devices.laptop} {
     width: 24%;

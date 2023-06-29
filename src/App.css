@@ -1,10 +1,11 @@
 @font-face {
-    font-family: "LatoRegular";
-    src: local("LatoRegular"),
-     url("./assets/fonts/Lato-Regular.ttf") format("truetype");
+  font-family: "LatoRegular";
+  src: local("LatoRegular"),
+    url("./assets/fonts/Lato-Regular.ttf") format("truetype");
 }
 
 .App {
-    font-family: "LatoRegular";
-    background-color: darkred;
+  font-family: "LatoRegular";
+  background-color: darkred;
+  padding-top: 1em;
 }

@@ -14,6 +14,10 @@ import br10 from "../../imgs/sports/bereals/br10.JPG";
 import br11 from "../../imgs/sports/bereals/br11.JPG";
 import br12 from "../../imgs/sports/bereals/br12.JPG";
 import br13 from "../../imgs/sports/bereals/br13.JPG";
+import br14 from "../../imgs/sports/bereals/br14.JPG";
+import br15 from "../../imgs/sports/bereals/br15.JPG";
+import br16 from "../../imgs/sports/bereals/br16.JPG";
+
 import { SlideImage, SlideDiv, SlideContainer } from "./Slideshow-Styles";
 
 const Slideshow = () => {
@@ -31,6 +35,9 @@ const Slideshow = () => {
     br11,
     br12,
     br13,
+    br14,
+    br15,
+    br16,
   ];
 
   const properties = {
