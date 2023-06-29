@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+
 import {
   CanvasDiv,
   CanvasButton,
@@ -20,6 +21,7 @@ class Canvas extends Component {
     disabled: false,
   };
 
+  
   render() {
     return (
       <CanvasDiv>

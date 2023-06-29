@@ -9,7 +9,6 @@ import {
 } from "./Interests-Styles.js";
 import Lightbox from "./Lightbox.js";
 import Slideshow from "./Slideshow.js";
-import eating from "../../imgs/food.jpg";
 
 const Interests = () => {
   return (
@@ -29,16 +28,7 @@ const Interests = () => {
       </InterestsBlurb>
       <Lightbox />
       <InterestsSubheading>Eating</InterestsSubheading>
-      <InterestsRow>
-        <InterestsBlurb>
-          Boston does not have a reputation of being a foodie city. However,
-          having lived here my whole life, that has made me even more motivated
-          to explore and discover the true culinary gems of my city. Every week
-          I endeavor to visit at least one new restaurant, and then record my
-          thoughts on the dining experience in the Notes app on my phone. 
-        </InterestsBlurb>
-        <SideImage src={eating}/>
-      </InterestsRow>
+
       <InterestsSubheading>Athletics</InterestsSubheading>
       <InterestsRow>
         <Slideshow/>

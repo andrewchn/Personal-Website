@@ -35,9 +35,11 @@ const Cards = styled.div`
 
   @media ${devices.mobile} {
     flex-direction: column;
+    align-items: center;
   }
   @media ${devices.tablet} {
     flex-direction: column;
+    align-items: center;
   }
   @media ${devices.laptop} {
     flex-direction: row;
@@ -59,12 +61,20 @@ const SkillList = styled.ul`
   background: #f7c331;
   list-style: none;
   padding-inline-start: 0;
-  width: 24%;
+  @media ${devices.mobile} {
+    width: 85%;
+  }
+  @media ${devices.tablet} {
+    width: 85%;
+  }
+  @media ${devices.laptop} {
+    width: 24%;
+    margin-bottom: 8em;
+  }
   height: 22em;
   text-align: center;
   padding-top: 2.5em;
   padding-bottom: 3em;
-  margin-bottom: 8em;
   border-radius: 2em;
   transition: transform 0.2s;
   &:hover {

@@ -9,7 +9,6 @@ import {
   QuoteImg,
 } from "./About-Styles.js";
 import Canvas from "../canvas/Canvas.js";
-import jay from "../../imgs/jayz.jpg";
 
 const About = () => {
   return (
