@@ -38,6 +38,9 @@ const InterestsBlurb = styled.p`
     border-radius: 2em;
 `
 
+const FoodLink = styled.a`
+`
+
 const InterestsRow = styled.div`
     display: flex;
 `
@@ -63,4 +66,5 @@ export {
     InterestsRow,
     InterestsCol,
     SideImage,
+    FoodLink,
 }
