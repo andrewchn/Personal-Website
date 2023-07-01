@@ -37,17 +37,9 @@ const Interests = () => {
           <img src={instalink}/>
         </FoodLink>
       <InterestsSubheading>Athletics</InterestsSubheading>
-      <InterestsRow>
+      {/* <InterestsRow>
         <Slideshow />
-        <InterestsBlurb>
-          Over the pandemic, I became obsessed with tennis. It fascinates me how
-          a sport based on the relatively simple concept of hitting a ball back
-          and forth over a fence is so demanding and complex, both technically
-          and mentally. In addition to tennis, I have played basketball for most
-          of my life. During the winter months, I love to hit the icy East coast
-          slopes with my friends.
-        </InterestsBlurb>
-      </InterestsRow>
+      </InterestsRow> */}
     </InterestsSection>
   );
 };

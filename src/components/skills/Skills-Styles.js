@@ -18,12 +18,29 @@ const SkillsIntro = styled.div`
 
 const SkillsTitle = styled.h1`
   font-size: 4em;
-  margin-left: 1em;
+  @media ${devices.mobile} {
+    margin-left: 0.5em;
+  }
+  @media ${devices.tablet} {
+    margin-left: 1em;
+  }
+  @media ${devices.laptop} {
+    margin-left: 1em;
+  }
 `;
 
 const SkillsIntroText = styled.p`
   font-size: 1.4em;
-  margin-left: 3em;
+  @media ${devices.mobile} {
+    margin-left: 1.5em;
+    padding-right: 1em;
+  }
+  @media ${devices.tablet} {
+    margin-left: 3.3em;
+  }
+  @media ${devices.laptop} {
+    margin-left: 3.3em;
+  }
 `;
 
 const Cards = styled.div`

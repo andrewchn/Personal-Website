@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {devices} from "../../constants/devices"
+import { devices } from "../../constants/devices";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const DesktopNavbar = styled.nav`
@@ -32,11 +32,8 @@ const MobileNavbar = styled.nav`
   position: fixed;
   z-index: 100;
   display: flex;
-  border-radius: 1em;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  height: 10%;
+  border-radius: 5% 5% 0 0;
+  height: 5.3em;
   width: 100%;
   bottom: 0;
   right: 0;
@@ -64,26 +61,28 @@ const FlexColumn = styled.div`
 `;
 
 const ProfileImg = styled.img`
-    width: 100%;
-    margin-top: 1.7em;
-    margin-bottom: 2em;
-    border-radius: 50%;
-    border-style: solid;
-    border-color: black;
-    box-shadow: 0 2px 2px black;
+  width: 100%;
+  margin-top: 1.7em;
+  margin-bottom: 2em;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: black;
+  box-shadow: 0 2px 2px black;
 `;
 
 const NavLinks = styled.ul`
   display: flex;
   list-style: none;
-  align-items: flex-start;
-  @media ${devices.mobileMax} {
-    flex-direction: row;
+  @media ${devices.mobile} {
+    width: 100%;
+    align-items: center;
   }
-  @media ${devices.tabletMax} {
-    flex-direction: row;
+  @media ${devices.tablet} {
+    width: 100%;
+    align-items: center;
   }
   @media ${devices.laptop} {
+    align-items: flex-start;
     flex-direction: column;
   }
   padding-inline-start: 0.1em;
@@ -91,16 +90,13 @@ const NavLinks = styled.ul`
 
 const NavItem = styled.li`
   margin-bottom: 0.2em;
-  &:last-child {
-    margin-right: 0;
+  @media ${devices.mobile} {
+    flex: 1;
   }
-  @media ${devices.mobileMax} {
-    margin-left: 1em;
-    margin-right: 1em;
-  }
-  @media ${devices.tabletMax} {
-    margin-left: 3em;
-    margin-right: 3em;
+  @media ${devices.tablet} {
+    flex: 1;
+    padding-left: 1em;
+    padding-right: 1em;
   }
 `;
 
@@ -111,7 +107,7 @@ const HeaderBox = styled.div`
 const NavText = styled.h1`
   text-align: start;
   font-size: 2.25em;
-  line-height: .25em;
+  line-height: 0.25em;
 `;
 
 const NavLink = styled.a`
@@ -123,22 +119,30 @@ const NavLink = styled.a`
   cursor: pointer;
   box-shadow: inset 0 0 0 0 black;
   color: black;
-  margin: 0 -.25rem;
-  padding: 0 .25rem;
-  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  margin: 0 -0.25rem;
+  padding: 0 0.25rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   :hover {
     box-shadow: inset 150px 0 0 0 black;
     color: white;
   }
 `;
 
-const MobileNavLink = styled(FontAwesomeIcon)`
+const MobileNavLink = styled.a`
+  @media ${devices.mobile} {
+    font-size: 1.3em;
+    margin-left: 1em;
+  }
+  @media ${devices.tablet} {
+    font-size: 1.5em;
+    margin-left: 1.5em;
+  }
   cursor: pointer;
   box-shadow: inset 0 0 0 0 black;
   color: black;
-  margin: 0 -.25rem;
-  padding: .1rem .25rem;
-  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  padding: 0.1rem 0.25rem;
+  // margin-right: 0.4em;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   :hover {
     box-shadow: inset 150px 0 0 0 black;
     color: white;
@@ -163,21 +167,18 @@ const MobileNavLink = styled(FontAwesomeIcon)`
 //   }
 // `;
 
-const DesktopNavLinks = styled.div`
-
-`;
-
+const DesktopNavLinks = styled.div``;
 
 export {
-    DesktopNavbar,
-    FlexColumn,
-    ProfileImg,
-    NavLinks,
-    NavItem,
-    NavText,
-    HeaderBox,
-    NavLink,
-    DesktopNavLinks,
-    MobileNavbar,
-    MobileNavLink,
+  DesktopNavbar,
+  FlexColumn,
+  ProfileImg,
+  NavLinks,
+  NavItem,
+  NavText,
+  HeaderBox,
+  NavLink,
+  DesktopNavLinks,
+  MobileNavbar,
+  MobileNavLink,
 };

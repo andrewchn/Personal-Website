@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { styles } from "../shared/Shared-Styles"
+import { devices } from "../../constants/devices";
 
 const InterestsSection = styled.div`
   padding-top: 2em;
@@ -14,7 +15,15 @@ const InterestsSection = styled.div`
 
 const InterestsTitle = styled.h1`
   font-size: 4em;
-  margin-left: 1em;
+  @media ${devices.mobile} {
+    margin-left: 0.5em;
+  }
+  @media ${devices.tablet} {
+    margin-left: 1em;
+  }
+  @media ${devices.laptop} {
+    margin-left: 1em;
+  }
 `;
 
 const LightboxDiv = styled.div`

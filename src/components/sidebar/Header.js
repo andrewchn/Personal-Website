@@ -87,17 +87,17 @@ const Header = () => {
             if (item.name === "Resume") {
               return (
                 <NavItem key={item.name}>
-                  <a href={resume} target="_blank" rel="noreferrer">
-                    <MobileNavLink icon={item.icon} color="black" size="2xl" />
-                  </a>
+                  <MobileNavLink href={resume} target="_blank" rel="noreferrer">
+                    <FontAwesomeIcon icon={item.icon} color="black" />
+                  </MobileNavLink>
                 </NavItem>
               );
             }
             return (
               <NavItem key={item.name}>
-                <a href={`/${item.tag}`}>
-                  <MobileNavLink icon={item.icon} color="black" size="2xl" />
-                </a>
+                <MobileNavLink href={`/${item.tag}`}>
+                  <FontAwesomeIcon icon={item.icon} color="black" />
+                </MobileNavLink>
               </NavItem>
             );
           })}

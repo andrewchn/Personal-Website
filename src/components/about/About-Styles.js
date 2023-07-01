@@ -18,12 +18,29 @@ const AboutDiv = styled.div`
 
 const AboutTitle = styled.h1`
   font-size: 5em;
-  margin-left: 1em;
+  @media ${devices.mobile} {
+    margin-left: 0.5em;
+  }
+  @media ${devices.tablet} {
+    margin-left: 1em;
+  }
+  @media ${devices.laptop} {
+    margin-left: 1em;
+  }
   margin-top: 0.7em;
 `;
 
 const AboutBlurb = styled.p`
-  margin-left: 3.3em;
+  @media ${devices.mobile} {
+    margin-left: 1.5em;
+  }
+  @media ${devices.tablet} {
+    margin-left: 3.3em;
+  }
+  @media ${devices.laptop} {
+    margin-left: 3.3em;
+  }
+  padding-right: 2em;
   font-size: 1.6em;
   width: 90%;
   margin-bottom: 1.3em;

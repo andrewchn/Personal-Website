@@ -27,7 +27,7 @@ const About = () => {
             abilities, as well as some personal interests.
           </AboutBlurb>
         </TextDiv>
-        <Canvas/>
+        {/* <Canvas/> */}
       </DivRow>
     </AboutDiv>
   );
