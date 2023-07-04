@@ -66,12 +66,12 @@ const Cards = styled.div`
 const CardItem = styled.li``;
 
 const CardHeader = styled.h2`
-  font-size: 2.2em;
+  font-size: 1.75em;
   margin-bottom: 1em;
 `;
 
 const CardText = styled.p`
-  font-size: 1.5em;
+  font-size: 1.4em;
 `;
 
 const SkillList = styled.ul`

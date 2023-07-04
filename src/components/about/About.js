@@ -18,9 +18,8 @@ const About = () => {
         <TextDiv>
           <AboutBlurb>
             I am fourth year Northeastern University student majoring in Computer
-            Science with a concentration in Software Development. I find it
-            fascinating that with just a few lines of code, we can develop
-            programs that can do anything.
+            Science with a concentration in Software Development. I am passionate about building applications 
+            that have practical application for end users. 
           </AboutBlurb>
           <AboutBlurb>
             On this website, I share some of my professional accomplishments and

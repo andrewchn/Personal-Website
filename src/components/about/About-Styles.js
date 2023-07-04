@@ -17,15 +17,15 @@ const AboutDiv = styled.div`
 `;
 
 const AboutTitle = styled.h1`
-  font-size: 5em;
+  font-size: 4.5em;
   @media ${devices.mobile} {
-    margin-left: 0.5em;
+    margin-left: 0.55em;
   }
   @media ${devices.tablet} {
-    margin-left: 1em;
+    margin-left: 1.1em;
   }
   @media ${devices.laptop} {
-    margin-left: 1em;
+    margin-left: 1.1em;
   }
   margin-top: 0.7em;
 `;
