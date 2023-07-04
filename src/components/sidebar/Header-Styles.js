@@ -98,6 +98,10 @@ const NavItem = styled.li`
     padding-left: 1em;
     padding-right: 1em;
   }
+  @media ${devices.laptop} {
+    padding-left: 0em;
+    padding-right: 0em;
+  }
 `;
 
 const HeaderBox = styled.div`
@@ -138,13 +142,13 @@ const MobileNavLink = styled.a`
     margin-left: 1.5em;
   }
   cursor: pointer;
-  box-shadow: inset 0 0 0 0 black;
+  box-shadow: inset 0 0 0 0 gray;
   color: black;
   padding: 0.1rem 0.25rem;
   // margin-right: 0.4em;
   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   :hover {
-    box-shadow: inset 150px 0 0 0 black;
+    box-shadow: inset 150px 0 0 0 blue;
     color: white;
   }
 `;

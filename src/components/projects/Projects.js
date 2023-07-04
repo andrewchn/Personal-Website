@@ -10,7 +10,7 @@ import {
   CardLink,
 } from "./Projects-Styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub  } from '@fortawesome/free-brands-svg-icons'
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const projectList = [
   {
@@ -34,7 +34,7 @@ const projectList = [
   {
     name: "Image Processor",
     img: "",
-    desc: "An image processing application written in Java with a JavaSwing frontend that allows users to perform basic edits to image files. Utilized some mathematical algorithms to allow users to apply more complex filters to edited images.",
+    desc: "An image processing application written in Java with a JavaSwing frontend that allows users to perform edits to image files. Utilized mathematical algorithms to allow users to apply more complex filters to edited images.",
     url: "https://github.com/andrewchn/Image-Processor",
   },
 ];
@@ -50,9 +50,9 @@ const Projects = () => {
               <CardImg src={project.img} />
               <CardTitle>{project.name}</CardTitle>
               <CardBlurb>{project.desc}</CardBlurb>
-              <CardLink href={project.url}>
+              <CardLink href={project.url} target="_blank">
                 <FontAwesomeIcon icon={faGithub} size="3x" color="black" />
-            </CardLink>
+              </CardLink>
             </ProjectsCard>
           );
         })}
