@@ -6,40 +6,44 @@ import {
   InterestsRow,
   InterestsCol,
   SideImage,
-  FoodLink,
+  FoodImg,
+  InterestsBlurbSmall,
 } from "./Interests-Styles.js";
 import Lightbox from "./Lightbox.js";
 import Slideshow from "./Slideshow.js";
-import instalink from "../../imgs/instalink.jpg"
+import instalink from "../../imgs/instalink.jpg";
 
 const Interests = () => {
   return (
     <InterestsSection id="interests">
       <InterestsTitle>Interests</InterestsTitle>
-      <InterestsSubheading>Photography</InterestsSubheading>
+      {/* <InterestsSubheading>Photography</InterestsSubheading> */}
       <InterestsBlurb>
-        I first got into photography three years ago when I stole my dad's
-        Pentax K1000 film camera from his closet. Initially, I was drawn to
-        photography because it was a way for me to document fun activities I was
-        doing. But as I spent more time capturing moments, I began to appreciate
-        the capability that film has to capture emotions at a split second in
-        time. In each photo I take, I aim to capture exactly what I was feeling
-        in that moment through the camera lens, so that when I look back at the
-        photos later I can fully recall not only what was happening but also how
-        it felt.
+        Sometimes I take film photos. I take my camera with me whereever I
+        travel.
       </InterestsBlurb>
       <Lightbox />
-      <InterestsSubheading>Eating</InterestsSubheading>
-      <InterestsBlurb>
-          I love to eat, although unlike this picture, I usually the one doing the eating. You follow along with me on my food journey if you click on the image to the right. 
-        </InterestsBlurb>
-        <FoodLink href='https://www.instagram.com/foodie_anjoo/' target="_blank">
-          <img src={instalink}/>
-        </FoodLink>
-      <InterestsSubheading>Athletics</InterestsSubheading>
-      {/* <InterestsRow>
+      {/* <InterestsSubheading>Eating</InterestsSubheading> */}
+      <InterestsRow>
+        <InterestsBlurbSmall>
+          I love to eat, although unlike this picture, I am usually the one
+          doing the eating. You follow along with me on my food journey if you
+          click on the image to the right.
+        </InterestsBlurbSmall>
+        <a href="https://www.instagram.com/foodie_anjoo/" target="_blank">
+          <FoodImg src={instalink} />
+        </a>
+      </InterestsRow>
+
+      {/* <InterestsSubheading>Athletics</InterestsSubheading> */}
+      <InterestsRow>
         <Slideshow />
-      </InterestsRow> */}
+        <InterestsBlurbSmall>
+          In the summer, my sport of choice is tennis. In the winter, I often go
+          snowboarding with my friends. Next winter I hope I will finally be
+          able to hit a frontside 180!
+        </InterestsBlurbSmall>
+      </InterestsRow>
     </InterestsSection>
   );
 };

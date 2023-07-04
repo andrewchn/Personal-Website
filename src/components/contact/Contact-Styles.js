@@ -15,10 +15,12 @@ const ContactDiv = styled.div`
       margin-top: 7em;
     }
     @media ${devices.tablet} {
+      margin-bottom: 5.1em;
       margin-left: 1em;
       margin-top: 10em;
     }
     @media ${devices.laptop} {
+      margin-bottom: 0em;
       margin-left: 1em;
       margin-top: 10em;
     }
