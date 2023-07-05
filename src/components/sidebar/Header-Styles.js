@@ -61,8 +61,7 @@ const FlexColumn = styled.div`
 `;
 
 const ProfileImg = styled.img`
-  width: 100%;
-  height: auto;
+  width: 80%;
   margin-top: 1.7em;
   margin-bottom: 2em;
   border-radius: 50%;
