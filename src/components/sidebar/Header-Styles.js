@@ -61,7 +61,8 @@ const FlexColumn = styled.div`
 `;
 
 const ProfileImg = styled.img`
-  width: 80%;
+  max-width: 80%;
+  height: auto;
   margin-top: 1.7em;
   margin-bottom: 2em;
   border-radius: 50%;
@@ -97,6 +98,9 @@ const NavItem = styled.li`
     flex: 1;
     padding-left: 1em;
     padding-right: 1em;
+  }
+  @media ${devices.laptop} {
+    padding-left: 0em;
   }
 `;
 
