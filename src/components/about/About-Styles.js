@@ -13,7 +13,8 @@ const AboutDiv = styled.div`
   padding-top: 0.01em;
   padding-bottom: 3em;
   border-radius: 2em;
-  background-color: #dcc7aa;
+  background-color: #e1d6c6;
+  box-shadow: 0 1px 1px black;
 `;
 
 const AboutTitle = styled.h1`

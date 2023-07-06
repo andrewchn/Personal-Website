@@ -10,7 +10,8 @@ const ProjectsSection = styled.div`
   display: flex;
   flex-direction: column;
   border-radius: 2em;
-  background-color: #dcc7aa;
+  background-color: #bcb8d3;
+  box-shadow: 0 1px 1px black;
 `;
 
 const ProjectsTitle = styled.h1`
@@ -34,7 +35,7 @@ const ProjectsCards = styled.div`
 `;
 
 const ProjectsCard = styled.div`
-  background-color: #6b7a8f;
+  background-color: #7c6f8a;
   @media ${devices.mobile} {
     width: 85%;
   }

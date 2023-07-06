@@ -15,7 +15,7 @@ const DesktopNavbar = styled.nav`
   background-color: #efefef;
   padding-bottom: 1.5em;
   border-radius: 1em;
-  // box-shadow: 0 2px 4px black;
+  box-shadow: 0 1px 1px black;
 
   @media ${devices.mobileMax} {
     display: none;

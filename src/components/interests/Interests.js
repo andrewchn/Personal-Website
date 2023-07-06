@@ -28,7 +28,7 @@ const Interests = () => {
         <InterestsBlurbSmall>
           I love to eat, although unlike this picture, I am usually the one
           doing the eating. You follow along with me on my food journey if you
-          click on the image to the right.
+          click on the image.
         </InterestsBlurbSmall>
         <a href="https://www.instagram.com/foodie_anjoo/" target="_blank">
           <FoodImg src={instalink} />

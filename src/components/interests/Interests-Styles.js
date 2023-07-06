@@ -11,7 +11,8 @@ const InterestsSection = styled.div`
   display: flex;
   flex-direction: column;
   border-radius: 2em;
-  background-color: #dcc7aa;
+  background-color: #798ab2;
+  box-shadow: 0 1px 1px black;
 `;
 
 const InterestsTitle = styled.h1`
@@ -51,7 +52,7 @@ const InterestsBlurb = styled.p`
     margin-right: 5em;
   }
   margin-left: 2.4em;
-  background-color: #f7c331;
+  background-color: #90b279;
   padding: 1em 1em 1em 1em;
   border-radius: 2em;
 `;
@@ -105,20 +106,6 @@ const SideImage = styled.img`
   margin-right: 1em;
 `;
 
-const BeReal = styled(Slideshow)`
-  @media ${devices.mobile} {
-    margin-left: 5em;
-    margin-right: 5em;
-  }
-  @media ${devices.tablet} {
-    margin-left: 5em;
-    margin-right: 5em;
-  }
-  @media ${devices.laptop} {
-    // margin-left: 5em;
-    // margin-right: 5em;
-  }
-`;
 
 export {
   InterestsSection,

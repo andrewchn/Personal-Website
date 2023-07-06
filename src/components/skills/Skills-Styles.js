@@ -9,7 +9,8 @@ const SkillsSection = styled.div`
 
   margin-right: 1em;
   border-radius: 2em;
-  background-color: #dcc7aa;
+  background-color: #b4cbc1;
+  box-shadow: 0 1px 1px black;
 `;
 
 const SkillsIntro = styled.div`
@@ -75,7 +76,7 @@ const CardText = styled.p`
 `;
 
 const SkillList = styled.ul`
-  background: #f7c331;
+  background: #68968b;
   list-style: none;
   padding-inline-start: 0;
   @media ${devices.mobile} {
@@ -97,7 +98,7 @@ const SkillList = styled.ul`
   border-radius: 2em;
   transition: transform 0.2s;
   &:hover {
-    background: #f7882f;
+    background: #92c092;
     transform: scale(1.05);
   }
 `;

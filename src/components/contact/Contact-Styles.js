@@ -6,9 +6,11 @@ import { devices } from "../../constants/devices";
 const ContactDiv = styled.div`
     ${styles.section}
     align-items: center;
-    background-color: #dcc7aa;
+    background-color: #ff6961;
     border-radius: 2em;
     padding: 1em 0em 1em 0em;
+    box-shadow: 0 1px 1px black;
+
     @media ${devices.mobile} {
       margin-bottom: 5.1em;
       margin-right: 1em;
