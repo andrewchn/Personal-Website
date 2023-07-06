@@ -141,16 +141,16 @@ const MobileNavLink = styled.a`
     font-size: 1.5em;
     margin-left: 1.5em;
   }
-  cursor: pointer;
-  box-shadow: inset 0 0 0 0 black;
-  color: black;
+  // cursor: pointer;
+  // box-shadow: inset 0 0 0 0 black;
+  // color: black;
   padding: 0.1rem 0.25rem;
-  // margin-right: 0.4em;
-  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  :hover {
-    box-shadow: inset 150px 0 0 0 black;
-    color: white;
-  }
+  margin-right: 0.4em;
+  // transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  // :hover {
+  //   box-shadow: inset 150px 0 0 0 black;
+  //   color: white;
+  // }
 `;
 
 // const SubLink = styled.a`
