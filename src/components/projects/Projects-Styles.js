@@ -15,16 +15,8 @@ const ProjectsSection = styled.div`
 `;
 
 const ProjectsTitle = styled.h1`
-  font-size: 4em;
-  @media ${devices.mobile} {
-    margin-left: 0.5em;
-  }
-  @media ${devices.tablet} {
-    margin-left: 1em;
-  }
-  @media ${devices.laptop} {
-    margin-left: 1em;
-  }
+  font-size: 3em;
+  margin-left: 0.9em;
 `;
 
 const ProjectsIntro = styled.p``;

@@ -16,9 +16,9 @@ const InterestsSection = styled.div`
 `;
 
 const InterestsTitle = styled.h1`
-  font-size: 4em;
+  font-size: 3em;
   @media ${devices.mobile} {
-    margin-left: 0.5em;
+    margin-left: 0.9em;
   }
   @media ${devices.tablet} {
     margin-left: 1em;
@@ -40,19 +40,22 @@ const InterestsSubheading = styled.h1`
 `;
 
 const InterestsBlurb = styled.p`
-  font-size: 1.7em;
-  line-height: 1.2em;
   @media ${devices.mobile} {
     margin-right: 2em;
+    font-size: 1.2em;
   }
   @media ${devices.tablet} {
     margin-right: 3em;
+    font-size: 1.2em;
+    line-height: 1.2em;
   }
   @media ${devices.laptop} {
     margin-right: 5em;
+    font-size: 1.2em;
+    line-height: 1.2em;
   }
   margin-left: 2.4em;
-  background-color: #90b279;
+//   background-color: #90b279;
   padding: 1em 1em 1em 1em;
   border-radius: 2em;
 `;

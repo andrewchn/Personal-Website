@@ -19,7 +19,7 @@ const Interests = () => {
       <InterestsTitle>Interests</InterestsTitle>
       {/* <InterestsSubheading>Photography</InterestsSubheading> */}
       <InterestsBlurb>
-        Sometimes I take film photos. I take my camera with me whereever I
+        Sometimes I take film photos. I take my camera with me where ever I
         travel.
       </InterestsBlurb>
       <Lightbox />
@@ -40,8 +40,7 @@ const Interests = () => {
         <Slideshow />
         <InterestsBlurbSmall>
           In the summer, my sport of choice is tennis. In the winter, I often go
-          snowboarding with my friends. Next winter I hope I will finally be
-          able to hit a frontside 180!
+          snowboarding with my friends. Next winter I hope I will finally hit a frontside 180!
         </InterestsBlurbSmall>
       </InterestsRow>
     </InterestsSection>

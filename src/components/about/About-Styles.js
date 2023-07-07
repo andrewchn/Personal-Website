@@ -18,31 +18,35 @@ const AboutDiv = styled.div`
 `;
 
 const AboutTitle = styled.h1`
-  font-size: 4.5em;
   @media ${devices.mobile} {
-    margin-left: 0.55em;
+    margin-left: 0.65em;
+    font-size: 3em;
   }
   @media ${devices.tablet} {
-    margin-left: 1.1em;
+    margin-left: 1.25em;
+    font-size: 4em;
   }
   @media ${devices.laptop} {
     margin-left: 1.1em;
+    font-size: 4.5em;
   }
   margin-top: 0.7em;
 `;
 
 const AboutBlurb = styled.p`
   @media ${devices.mobile} {
-    margin-left: 1.5em;
+    margin-left: 1.65em;
+    font-size: 1.3em;
   }
   @media ${devices.tablet} {
     margin-left: 3.3em;
+    font-size: 1.6em;
   }
   @media ${devices.laptop} {
     margin-left: 3.3em;
+    font-size: 1.6em;
   }
   padding-right: 2em;
-  font-size: 1.6em;
   width: 90%;
   margin-bottom: 1.3em;
 `;
